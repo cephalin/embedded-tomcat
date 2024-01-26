@@ -16,8 +16,8 @@ public class TomcatEmbedded {
         String contextPath = "";
         // Set to location of your webapp directory.
         String webappDir = new File("src/main/webapp/").getAbsolutePath();
-        // Set to the PORT variable or default to 8080.
-        String webPort = System.getenv("PORT");
+        // Set to the WEBSITES_PORT variable or default to 8080.
+        String webPort = System.getenv("WEBSITES_PORT");
         if(webPort == null || webPort.isEmpty()) {
             webPort = "8080";
         }
